@@ -21,11 +21,12 @@ app.controller('ContactController', function ($scope, $http) {
                 if (data.ok) { //success comes from the return json object
                     $scope.submitButtonDisabled = false;
 		$scope.formData = null;
-                    $scope.resultMessage = data.message;
+                    $scope.resultMessage = "Thanks! Your message has been received. I will reach you via email in 12 hours.";
                     $scope.result='bg-success';
                 } else {
                     $scope.submitButtonDisabled = false;
-					$scope.resultMessage = data.message;
+					$scope.resultMessage = "Something went wrong! Message could not be submitted. Please try again!" +
+                        " Or, email me at akshat2@gmail.com or call me at +91 9997969007";
                     $scope.result='bg-danger';
                 }
 
