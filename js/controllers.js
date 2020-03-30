@@ -18,7 +18,7 @@ app.controller('ContactController', function ($scope, $http) {
                 headers : { 'Content-Type': 'application/json' }  //set the headers so angular passing info as form data (not request payload)
             }).success(function(data){
                 console.log(data);
-                if (data.success) { //success comes from the return json object
+                if (data.ok) { //success comes from the return json object
                     $scope.submitButtonDisabled = false;
 		$scope.formData = null;
                     $scope.resultMessage = data.message;
@@ -28,6 +28,7 @@ app.controller('ContactController', function ($scope, $http) {
 					$scope.resultMessage = data.message;
                     $scope.result='bg-danger';
                 }
+
             });
         } else {
             $scope.submitButtonDisabled = false;
