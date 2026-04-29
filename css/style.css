@@ -371,7 +371,8 @@ p {
   .content-block .person-img {
     height: 150px;
     width: 150px;
-    background: url(../img/profile.jpg);
+    /* background: url(../img/profile.jpg); */
+	background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC27V0qL8WqFxKyNrzrPPSLXd-2jCRZt8LhRtHj2043E3a56UdTpU60g6isIpHNy8zpyRZxJUSCKI4Y2vUTu2gkjlmt7d0gLS3Yw3jxZlDYtzRpz7kfuxkq6IaX_iDQfw1yoANpi_bONQ-tKmE39L8kknlkpPX_JLtLVOFSWVra-deFYjz8gkapr-BaYM/s320/1630524411670.jfif");  
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: cover; }
